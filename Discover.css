@@ -5,7 +5,7 @@
 }
 :root{
     --text-color:rgb(241, 235, 235);
-    --bg-url:url(./bg-mobile.jpg);
+    --bg-url:url(./IMG/black1.avif);
     --stroke-color:rgba(58, 50, 50, 0.5) ;
     --surface-color:rgb(77, 66, 66, 0.1);
     --surface-color-hover: rgb(0, 0, 0, 0.02);
@@ -14,7 +14,7 @@
 }
 .luz{
     --text-color:black;
-    --bg-url:url(./luz.jpg);
+    --bg-url:url(./IMG/WHITE.avif);
     --stroke-color:rgb(77, 66, 66, 0.2);
     --surface-color-hover: rgb(0, 0, 0 , 0.02);
     --highlight-color: rgb(0, 0, 0, 0.1);

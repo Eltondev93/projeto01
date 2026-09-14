@@ -9,9 +9,9 @@ const img = document.querySelector('#profile img')
 if(body.classList.contains('luz')){
 
 // se tiver ligth mode, adicionar a imagem ligth{
-    img.setAttribute('src', './escuro.jpg')
+    img.setAttribute('src', './IMG/escuro.jpg')
 }else {
 // se tiver  sem light mode, manter a imagem normal
-    img.setAttribute('src', './DIA.jpg')
+    img.setAttribute('src', './IMG/DIA.jpg')
 }
 }
