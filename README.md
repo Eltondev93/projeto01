@@ -18,7 +18,7 @@ Feito  para testar meus conhecimentos com HTML5, CSS, JAVASCRIPT e FIGMA.
 <br>
 
 <p align="center">
-  <img alt="My Links" src=".Github/Capa.jpg" width="100%">
+  <img alt="My Links" src=".GitHub/Capa.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
