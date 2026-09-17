@@ -9,7 +9,7 @@
     --stroke-color:rgba(58, 50, 50, 0.5) ;
     --surface-color:rgb(77, 66, 66, 0.1);
     --surface-color-hover: rgb(0, 0, 0, 0.02);
-    --highlight-color: rgb(77, 66, 66, 0.2);
+    --highlight-color: rgba(78, 70, 70, 0.2);
     --switch-bg-url:url(./lua.svg);
 }
 .luz{
@@ -24,6 +24,7 @@
 body{
    
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 body * {
 font-family: "Inter", sans-serif;
@@ -71,20 +72,25 @@ color:var(--text-color);
 
 }
 
-#switch button {
-width: 22px;
-height: 22px;
+#switch button  {
+width: 32px;
+height: 32px;
 background:white var(--switch-bg-url) no-repeat center; 
 border:0;
 border-radius: 50%;
 position: absolute;
 transform: translateY(-50%);/*ALINHAMENTO **centraliza tirando TRANSLATE e volta com o  TOP*/
 top: 50%;
-right: initial;
+left: 0;
 z-index: 1;/*andar sobreposição*/
+animation: slideback  0.2s;
 }
 .luz #switch button{
-    right:0 ;
+    animation: slide-in 0.2s forwards ;
+}
+
+#switch button:hover{
+    outline: 8px solid var(--highlight-color)
 }
 
 #switch span {
@@ -133,7 +139,6 @@ ul li a:hover{
 #social-links {
     display: flex;
     justify-content:center;
- 
     font-size: 25px;
     padding: 16px;
    
@@ -159,3 +164,33 @@ footer{
 
 }
 
+/*MEDIA QUERIES */
+
+/*FAZ UM AJUSTE DA IMAGEMDO BACKGROUND CONFORME AJUSTA A JANELA*/ 
+
+/*@media(min-width:700px){
+    :root{
+        --bg-url: url(./outraimagem.jpg)
+    }
+    .light {
+        --bg-url: url(./outra imagemlight.jpg)
+    }*/
+
+    /*animation*/ 
+    @keyframes  slide-in{
+        from {
+            left: 0;
+        } 
+        to{
+            left: 50%;
+        }
+    }
+    @keyframes slideback {
+        from{
+            left: 50%;
+        }
+        to{
+            left: 0;
+        }
+        
+    }
